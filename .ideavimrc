@@ -1,0 +1,115 @@
+"           _     
+"     _  __(_)_ _ 
+"    | |/ / /  ' \
+"    |___/_/_/_/_/
+"                 
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+" General
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+
+" Prevent cursor from moving to sol when buffer switching
+set nostartofline
+
+" Select past eol in visual-block
+set virtualedit=block
+
+" Don't redraw for macros
+set lazyredraw
+set nottimeout
+
+" Nice completion settings
+set wildmenu
+set wildmode=longest,full,list
+set wildignore=*.o,*~,*.pyc,*.so
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=*.png,*.jpg,*.gif
+
+" Shift char with C-A and C-X.
+set nrformats=alpha
+
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+" Indentation
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+
+" Enable backspace
+set backspace=2
+
+" Convert tabs to spaces for PEP8
+set expandtab
+
+" 4 spaces for a tab
+set tabstop=4
+
+" 4 spaces for indentation
+set shiftwidth=4
+set softtabstop=4
+
+" Indent to nearest tabstop
+set shiftround
+
+" Automatically indent after certain cues
+set autoindent
+
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+" Searching
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+
+" Move cursor to search result
+set incsearch
+
+" Highlight search result
+set hlsearch
+
+" Ignore case when searching
+set ignorecase
+
+" But don't when using uppercase letters
+set smartcase
+
+" Magic regex
+set magic
+
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+" Keybindings
+" =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+
+" Useless keys
+nnoremap Q <nop>
+
+" Error movement
+nnoremap [q :lprevious<CR>
+nnoremap ]q :lnext<CR>
+nnoremap [e :cprevious<CR>
+nnoremap ]e :cnext<CR>
+
+" Easier navigation in long lines
+nnoremap <silent> j gj
+nnoremap <silent> k gk
+
+" Center screen when searching and moving
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Make Y behave like other capitals
+nnoremap Y y$
+
+" Black hole
+nnoremap X "_d
+
+" Substitute current line with buffer content
+nnoremap S "_ddP
+
+" Easy line movement
+noremap H ^
+noremap L g_
+
+" Quick q macro replay
+nnoremap Q @q
+
+" Clear search highlighting with enter
+nnoremap <cr> :nohlsearch<cr>:<backspace>
+

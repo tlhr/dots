@@ -1,0 +1,62 @@
+{
+  "keys": {
+    "command": {
+      "unbind": [
+        "s",
+        "shift-l",
+        "shift-m",
+        "p",
+        "z",
+        "h",
+        "l",
+        "r",
+        "m",
+        "y",
+        "a",
+        "b",
+        "v",
+        "shift-v",
+        "c",
+        "x",
+        "shift-o",
+        "o",
+        "d,d",
+        "shift-k",
+        "i,i"
+      ],
+      "bind": {
+        "u": "jupyter-notebook:undo-cell-deletion",
+        "l": "jupyter-notebook:move-cell-down",
+        "h": "jupyter-notebook:move-cell-up",
+        "g,l": "jupyter-notebook:toggle-cell-line-numbers",
+        "x,x": "jupyter-notebook:delete-cell",
+        "shift-j": "jupyter-notebook:merge-cell-with-next-cell",
+        ":,w": "jupyter-notebook:save-notebook",
+        "g,m": "jupyter-notebook:change-cell-to-markdown",
+        "g,c": "jupyter-notebook:change-cell-to-code",
+        "g,r": "jupyter-notebook:change-cell-to-raw",
+        "shift-o": "jupyter-notebook:insert-cell-above",
+        "o": "jupyter-notebook:insert-cell-below",
+        "p": "jupyter-notebook:paste-cell-below",
+        "shift-p": "jupyter-notebook:paste-cell-above",
+        "y,y": "jupyter-notebook:copy-cell",
+        "d,d": "jupyter-notebook:cut-cell",
+        "i": "jupyter-notebook:enter-edit-mode",
+        "shift-k": "jupyter-notebook:split-cell-at-cursor",
+        "esc": "jupyter-notebook:enter-command-mode",
+        "r": "jupyter-notebook:run-cell",
+        "g,i": "jupyter-notebook:interrupt-kernel"
+      }
+    }
+  },
+  "load_extensions": {
+    "execute_time/ExecuteTime": true,
+    "export_embedded/main": true,
+    "keyboard_shortcut_editor/main": true
+  },
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  }
+}
